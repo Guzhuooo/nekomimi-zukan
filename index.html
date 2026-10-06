@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>猫娘完全图鉴 · 第二版</title>
+<meta name="description" content="一本正经地介绍猫娘（nekomimi）：定义、常见品种、野生观测记录与饲养须知。图片来自各画师，署名见页脚。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M5 13 L4 4 L12 8 Z M27 13 L28 4 L20 8 Z' fill='%23c2473a'/%3E%3Ccircle cx='16' cy='18' r='11' fill='%23c2473a'/%3E%3Ccircle cx='11.5' cy='16.5' r='1.8' fill='%23fffdf7'/%3E%3Ccircle cx='20.5' cy='16.5' r='1.8' fill='%23fffdf7'/%3E%3Cpath d='M14 21 Q 16 23, 18 21' fill='none' stroke='%23fffdf7' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+<header class="topbar">
+  <a class="brand" href="#top"><span class="brand-seal" aria-hidden="true">猫</span>猫娘完全图鉴</a>
+  <nav class="topnav" aria-label="页面目录">
+    <a href="#about">什么是猫娘</a>
+    <a href="#breeds">常见品种</a>
+    <a href="#gallery">观测记录</a>
+    <a href="#care">饲养须知</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">手工整理 · 第二版</p>
+      <h1>猫娘<br>完全图鉴</h1>
+      <p class="hero-lead">关于头顶长耳朵这件事，我们需要认真谈谈。猫娘广泛分布于动画、漫画、游戏及其周边，外形与人类高度相似，区别在于头顶多出一对毛茸茸的三角形耳朵，以及一条心情好时会自己摇起来的尾巴。</p>
+      <div class="pet-corner">
+        <button id="petBtn" type="button">吸 一 口</button>
+        <p id="petCount" class="pet-count" aria-live="polite">今日已吸猫 0 次</p>
+      </div>
+    </div>
+    <figure class="hero-card">
+      <span class="tape tape-hero" aria-hidden="true"></span>
+      <img src="assets/img/neko04.webp" alt="观测样本 No.000：跪坐的猫娘插画，金发，白色裙装" width="900" height="1200">
+      <figcaption>观测样本 No.000 ·「会乖乖坐好的那种」<span class="credit">画师 <a href="https://twitter.com/Bono_Noo" target="_blank" rel="noopener">Bono</a></span></figcaption>
+      <span class="hanko" aria-hidden="true">猫</span>
+    </figure>
+  </section>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 600 24" width="600" height="24" role="presentation" focusable="false">
+      <path d="M8 14 Q 40 6, 72 13 T 136 13 T 200 13 T 264 13 T 336 13 T 400 13 T 464 13 T 528 13 T 592 13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1 9"/>
+      <g transform="translate(300 12)">
+        <path d="M-7 3 A 7 7 0 0 1 7 3 Z" fill="currentColor"/>
+        <circle cx="0" cy="4.4" r="1.8" fill="none" stroke="var(--paper)" stroke-width="1"/>
+        <path d="M-3.5 3 L -2.2 -5 M3.5 3 L 2.2 -5" stroke="currentColor" stroke-width="1.6" fill="none"/>
+        <circle cx="0" cy="-6.6" r="2.4" fill="currentColor"/>
+      </g>
+    </svg>
+  </div>
+
+  <section id="about" class="sec">
+    <h2 class="sec-title">什么是猫娘</h2>
+    <div class="dict-card">
+      <svg class="fishbone" viewBox="0 0 120 40" aria-hidden="true" focusable="false">
+        <path d="M6 20 H 96 M96 20 L 112 10 M96 20 L 112 30" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M20 20 L 14 8 M34 20 L 28 8 M48 20 L 42 8 M62 20 L 56 8 M76 20 L 70 8 M90 20 L 84 8 M20 20 L 14 32 M34 20 L 28 32 M48 20 L 42 32 M62 20 L 56 32 M76 20 L 70 32 M90 20 L 84 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="4" cy="20" r="3.4" fill="currentColor"/>
+      </svg>
+      <p class="dict-head"><span class="dict-word">【猫娘】</span><span class="dict-pinyin">māo niáng</span><span class="dict-jp">ねこみみ / nekomimi</span></p>
+      <p class="dict-body"><b>名词。</b>一种头顶长着猫耳、身后拖着尾巴、平时以人类形态生活的神秘生物。性格因个体差异极大，唯一共通点是：没有一只对小鱼干说不。</p>
+      <ul class="traits">
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 14 L5 4 L10 10 Z M21 14 L19 4 L14 10 Z" fill="currentColor"/><path d="M5 14 A 7 6 0 0 0 19 14" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+          <div><b>耳朵 ×2</b>可一百八十度转向，情绪全写在上面。嘴上说「没事」，耳朵早就出卖了她。</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 16 C 10 20, 14 20, 18 14 C 21 9, 20 5, 17 7 C 19 9, 17 12, 14 13 C 10 14.5, 7 14, 4 16 Z" fill="currentColor"/></svg>
+          <div><b>尾巴 ×1</b>开心时左右摇，紧张时炸成平时两倍粗。据说可以通过尾巴判断她今天的心情，误差约等于没有。</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 5 Q 10 12, 6 19 M12 5 Q 16 12, 12 19 M18 5 Q 22 12, 18 19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <div><b>叫声「喵」</b>根据语境至少有十四种含义：高兴、抗议、要饭、撒娇、以及「你为什么还不开罐罐」。</div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="6" width="16" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M4 11 H 20" stroke="currentColor" stroke-width="2.2"/></svg>
+          <div><b>习性</b>白天嗜睡，晚上精神。对纸箱、毛线球和你的键盘有强烈的占有欲，尤其在你需要用的时候。</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="breeds" class="sec">
+    <h2 class="sec-title">常见品种</h2>
+    <ul class="breeds">
+      <li class="breed">
+        <h3>傲娇型</h3>
+        <p>「才、才不是为了你才摇尾巴的！」——耳朵红透，尾巴摇成了风扇。</p>
+        <span class="breed-tag">观测难度 ★★☆</span>
+      </li>
+      <li class="breed">
+        <h3>三无型</h3>
+        <p>面无表情，尾巴规律摆动。耳朵会替她说话，多摸两下就会呼噜。</p>
+        <span class="breed-tag">观测难度 ★★★★</span>
+      </li>
+      <li class="breed">
+        <h3>元气型</h3>
+        <p>尾巴转速与开心程度成正比。缺点：凌晨三点会踩着你的肚子跑酷。</p>
+        <span class="breed-tag">观测难度 ★☆☆</span>
+      </li>
+      <li class="breed">
+        <h3>腹黑型</h3>
+        <p>笑得越甜，越要看好你的小鱼干。上次库存见底只用了半天。</p>
+        <span class="breed-tag">观测难度 ★★★</span>
+      </li>
+      <li class="breed">
+        <h3>大小姐型</h3>
+        <p>只喝特定温度的水，但会趁你不注意，把最后一条小鱼干留给你。</p>
+        <span class="breed-tag">观测难度 ★★★★★</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="sec">
+    <h2 class="sec-title">野生猫娘观测记录</h2>
+    <p class="sec-note">以下个体均在互联网深处被观测到，按捕获顺序编号，点击可放大观测。每张都标注了原始画师——喜欢哪位，就点名字去她的主页看更多。</p>
+    <div id="galleryGrid" class="gallery"></div>
+  </section>
+
+  <section id="care" class="sec">
+    <h2 class="sec-title">饲养须知</h2>
+    <ul class="notes">
+      <li class="note"><h3>关于投喂</h3><p>投喂前洗手。小鱼干库存永远不足，请按预算的三倍采购。</p></li>
+      <li class="note"><h3>关于肢体接触</h3><p>禁止突然举起——会炸毛。禁止摸完就跑——会记仇，且记很久。</p></li>
+      <li class="note"><h3>关于纸箱</h3><p>纸箱不分大小，也不分贵贱。只要她进去了，那个纸箱就是她的了。</p></li>
+      <li class="note"><h3>关于过冬</h3><p>天冷请提前提供膝上位置。否则她会自己找一个，比如你的键盘。</p></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-seal" aria-hidden="true">喵</p>
+    <p>本页所有插画均来自 <a href="https://nekos.best" target="_blank" rel="noopener">nekos.best</a> 收录的画师作品，版权归原作者所有。图片仅作介绍展示，如果你喜欢某位画师，请通过卡片上的链接前往原作页面。</p>
+    <p class="footer-fine">纯手搓 · 无框架无模板 · 编委会邮箱暂未启用，有事请烧纸箱</p>
+  </div>
+</footer>
+
+<dialog id="lightbox" aria-label="观测样本放大图">
+  <button id="lbClose" class="lb-close" type="button" aria-label="关闭">×</button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption><span id="lbNo"></span> <a id="lbArtist" href="#" target="_blank" rel="noopener"></a></figcaption>
+  </figure>
+</dialog>
+
+<script src="gallery-data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
